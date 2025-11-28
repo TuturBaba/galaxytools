@@ -187,22 +187,22 @@
 				<param name="init_lr" value="0.02" />
 				<param name="weight_decay" value="0.001" />
             </section>
-                <output name="best_model">
-                    <assert_contents>
-                        <has_size value="5969892" delta="100"/>
-                    </assert_contents>
-                </output>
-                <output name="last_model">
-                    <assert_contents>
-                        <has_size value="5969892" delta="100"/>
-                    </assert_contents>
-                </output>
-                <output name="metrics_csv">
-                    <assert_contents>
-                        <has_n_lines n="11"/>
-                    </assert_contents>
-	            </output>
-	            <output name="metrics_plot" file="results_plot2.png" compare="sim_size" />
+            <output name="best_model">
+                <assert_contents>
+                    <has_size value="5969892" delta="100"/>
+                </assert_contents>
+            </output>
+            <output name="last_model">
+                <assert_contents>
+                    <has_size value="5969892" delta="100"/>
+                </assert_contents>
+            </output>
+            <output name="metrics_csv">
+                <assert_contents>
+                    <has_n_lines n="11"/>
+                </assert_contents>
+	        </output>
+	        <output name="metrics_plot" file="results_plot2.png" compare="sim_size" />
         </test>
     </tests>
     <help><![CDATA[
